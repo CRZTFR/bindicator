@@ -6,11 +6,12 @@ Local-push integration for the [Bindicator](https://bindicator.net) bin-collecti
 
 ### HACS (recommended)
 
-1. In HACS → Integrations → ⋮ → **Custom repositories**
-2. Add `https://github.com/CRZTFR/bindicator` as type **Integration**
-3. Install the **Bindicator** integration
-4. Restart Home Assistant
-5. Your Bindicator should appear under **Settings → Devices & Services → Discovered**. Click **Add** — there's nothing to configure.
+Bindicator is in the default HACS store — no custom repository needed.
+
+1. Open **HACS** and search for **Bindicator**
+2. Install the **Bindicator** integration
+3. Restart Home Assistant
+4. Your Bindicator should appear under **Settings → Devices & Services → Discovered**. Click **Add** — there's nothing to configure.
 
 If auto-discovery doesn't find your device (some routers block mDNS across VLANs), add it manually via **Settings → Devices & Services → Add Integration → Bindicator** and enter the IP address.
 
@@ -18,7 +19,7 @@ If auto-discovery doesn't find your device (some routers block mDNS across VLANs
 
 1. Copy `custom_components/bindicator/` into your HA `config/custom_components/` directory
 2. Restart Home Assistant
-3. Follow step 5 above
+3. Follow step 4 above
 
 ## Requirements
 
